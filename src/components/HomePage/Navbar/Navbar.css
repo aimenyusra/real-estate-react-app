@@ -1,0 +1,148 @@
+.navbar{
+width:100%;
+padding:18px 40px;
+background:white;
+position:fixed;
+top:0;
+z-index:1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+body.dark .navbar{
+background:#111;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.nav-wrapper{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+color:#b68c2f;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+list-style:none;
+font-weight:500;
+cursor:pointer;
+}
+
+.nav-links li{
+transition:0.3s;
+}
+
+.nav-links li:hover{
+color:#b68c2f;
+}
+body.dark .nav-links li{
+color:white;
+}
+.dark .nav-links li:hover{
+color:#b68c2f;
+}
+.toggles{
+display:flex;
+gap:12px;
+align-items:center;
+}
+.language-toggle,.toggle-switch{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.lang-btn{
+padding:8px 16px;
+border-radius:20px;
+border:none;
+font-weight:600;
+font-size:14px;
+cursor:pointer;
+background:linear-gradient(135deg,#bba64a,#796502);
+color:white;
+transition:0.3s;
+}
+.dark .lang-btn{
+background:linear-gradient(135deg,#333,#555);
+}
+.lang-btn:hover{
+transform:translateY(-2px);
+box-shadow:0 6px 14px rgba(0,0,0,0.15);
+}
+.dark .lang-btn:hover{background:linear-gradient(135deg,#333,#555);
+}
+
+
+.toggle-switch{
+width:60px;
+height:30px;
+background:#ddd;
+border-radius:30px;
+position:relative;
+display:flex;
+align-items:center;
+padding:3px;
+cursor:pointer;
+/* flex-shrink: 0; */
+}
+.dark .toggle-switch{
+  background:#333;
+}
+
+.toggle-circle{
+width:24px;
+height:24px;
+background:rgb(255, 255, 255);
+border-radius:50%;
+position: absolute;
+top: 3px;
+left: 3px;
+display:flex;
+align-items:center;
+justify-content:center;
+inset-inline-start: 2px;
+transition:transform 0.3s ease;
+}
+.dark .toggle-circle{
+background:#bbb;
+}
+
+.toggle-circle.move{
+transform:translateX(30px);
+}
+
+
+.dark .toggle-circle.move{
+background:#bbb;
+}
+html[dir="rtl"] .toggle-circle{
+left: auto;
+right: 3px;
+}
+html[dir="rtl"] .toggle-circle.move{
+transform:translateX(-30px);
+}
+@media (max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.logo{
+font-size:18px;
+}
+
+}

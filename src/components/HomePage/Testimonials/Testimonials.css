@@ -1,0 +1,33 @@
+.testimonials{
+padding:80px 20px;
+text-align:center;
+}
+
+.testimonials h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.testimonial-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.testimonial-card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:12px;
+max-width:350px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p{
+font-size:16px;
+margin-bottom:15px;
+}
+
+.testimonial-card h4{
+font-weight:600;
+}

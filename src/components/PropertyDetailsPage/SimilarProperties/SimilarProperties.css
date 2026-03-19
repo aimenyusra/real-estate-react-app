@@ -1,0 +1,60 @@
+.pd-similar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+  border-top: 1px solid var(--pd-border);
+}
+.pd-similar__eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--pd-blue);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.dark .pd-similar__eyebrow { color: var(--pd-blue); }
+.pd-similar__title {
+  font-family: var(--pd-font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  color: var(--pd-text-1);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.dark .pd-similar__title { color: var(--pd-text-1-dark); }
+.pd-similar__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.4rem;
+}
+
+.pd-similar-card {
+  background: var(--pd-surface);
+  border: 1px solid var(--pd-border);
+  border-radius: var(--pd-radius-lg);
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  transition: all var(--pd-dur) var(--pd-ease);
+  box-shadow: var(--pd-shadow);
+}
+.dark .pd-similar-card {
+  background: var(--pd-surface-dark);
+  border-color: var(--pd-border-dark);
+}
+.pd-similar-card:hover             { transform: translateY(-4px); box-shadow: var(--pd-shadow-lg); border-color: var(--pd-border-blue); }
+.dark .pd-similar-card:hover { transform: translateY(-4px); box-shadow: var(--pd-shadow-lg); border-color: var(--pd-border-blue-dark); }
+.pd-similar-card__img-wrap         { height: 180px; overflow: hidden; }
+
+.pd-similar-card__img-wrap img     { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--pd-ease); }
+.pd-similar-card:hover .pd-similar-card__img-wrap img { transform: scale(1.06); }
+.pd-similar-card__body             { padding: 1.1rem 1.2rem; }
+.pd-similar-card__price            { font-family: var(--pd-font-display); font-size: 1.15rem; font-weight: 700; color: var(--pd-text-1); margin-bottom: 0.35rem; }
+.dark .pd-similar-card__price { color: var(--pd-text-1-dark); }
+.pd-similar-card__loc              { font-size: 0.78rem; color: var(--pd-text-2); margin-bottom: 0.45rem; }
+.dark .pd-similar-card__loc { color: var(--pd-text-2-dark); }
+.pd-similar-card__specs            { font-size: 0.76rem; color: var(--pd-text-3); }
+.dark .pd-similar-card__specs { color: var(--pd-text-3-dark); }
+@media (max-width: 640px) {
+  .pd-similar       { padding: 2rem 1rem 4rem; }
+  .pd-similar__grid { grid-template-columns: 1fr; }
+}

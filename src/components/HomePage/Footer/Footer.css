@@ -1,0 +1,15 @@
+.footer{
+background:#1a1a1a;
+color:white;
+padding:60px 0;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:40px;
+}
+
+.footer h2{
+color:#c8a96a;
+}

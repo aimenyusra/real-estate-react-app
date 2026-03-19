@@ -1,0 +1,44 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+#root{
+  width: 100%;
+}
+body{
+font-family:"Inter",sans-serif;
+background:#f8f8f8;
+color:#1a1a1a;
+margin: 0;
+width: 100%;
+}
+
+h1,h2,h3{
+font-family:"Playfair Display",serif;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:0 auto;
+}
+
+.btn{
+padding:12px 28px;
+border:none;
+cursor:pointer;
+border-radius:8px;
+font-weight:500;
+}
+
+.primary{
+background:#c8a96a;
+color:white;
+}
+
+.secondary{
+background:transparent;
+border:1px solid #c8a96a;
+color:#c8a96a;
+}
