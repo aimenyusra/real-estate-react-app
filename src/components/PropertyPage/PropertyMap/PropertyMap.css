@@ -22,9 +22,9 @@
 }
 .pmap__count {
   font-size: 0.7rem;
-  background: rgba(10,108,245,0.08);
-  color: #0a6cf5;
-  border: 1px solid rgba(10,108,245,0.2);
+  background: rgba(245, 186, 10, 0.08);
+  color: #f5da0a;
+  border: 1px solid rgba(245, 222, 10, 0.2);
   padding: 0.18rem 0.6rem;
   border-radius: 20px;
   font-weight: 600;
@@ -42,8 +42,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(10,108,245,0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10,108,245,0.07) 1px, transparent 1px);
+    linear-gradient(rgba(245, 233, 10, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 218, 10, 0.07) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
@@ -51,7 +51,7 @@
 .pmap__pin {
   position: absolute;
   transform: translate(-50%, -50%);
-  background: #0a6cf5;
+  background: #f5ce0a;
   color: #fff;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.62rem;
@@ -59,7 +59,7 @@
   padding: 0.28rem 0.65rem;
   border-radius: 20px;
   border: 2px solid #fff;
-  box-shadow: 0 2px 10px rgba(10,108,245,0.4);
+  box-shadow: 0 2px 10px rgba(245, 229, 10, 0.4);
   cursor: pointer;
   transition: all 0.2s ease;
   z-index: 2;
@@ -75,11 +75,11 @@
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 7px solid #0a6cf5;
+  border-top: 7px solid #f5ce0a;
 }
-.pmap__pin:hover    { background: #0854c2; transform: translate(-50%, -50%) scale(1.1); z-index: 10; }
-.pmap__pin--active  { background: #0f172a; border-color: #0a6cf5; z-index: 20; }
-.pmap__pin--active::after { border-top-color: #0f172a; }
+.pmap__pin:hover    { background: #c2b908; transform: translate(-50%, -50%) scale(1.1); z-index: 10; }
+.pmap__pin--active  { background: #2a2a0f; border-color: #f5d60a; z-index: 20; }
+.pmap__pin--active::after { border-top-color: #2a220f; }
 
 /* Popup */
 .pmap__popup {
@@ -109,7 +109,7 @@
 .pmap__popup-link  {
   display: block;
   text-align: center;
-  background: #0a6cf5;
+  background: #f5c20a;
   color: #fff;
   font-size: 0.72rem;
   font-weight: 700;
@@ -118,7 +118,7 @@
   text-decoration: none;
   transition: background 0.18s;
 }
-.pmap__popup-link:hover { background: #0854c2; }
+.pmap__popup-link:hover { background: #c29d08; }
 
 /* Footer */
 .pmap__footer {
@@ -139,13 +139,13 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #0a6cf5;
+  background: #f5ce0a;
   display: inline-block;
 }
 .pmap__gmaps {
   font-size: 0.72rem;
   font-weight: 600;
-  color: #0a6cf5;
+  color: #f5ce0a;
   text-decoration: none;
   transition: opacity 0.18s;
 }

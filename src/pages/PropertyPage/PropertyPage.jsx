@@ -61,7 +61,7 @@ const Properties = () => {
             <p className="props-hero__eyebrow">◆ Browse Listings</p>
             <h1 className="props-hero__title">Find Your <em>Perfect Property</em></h1>
             <p className="props-hero__sub">
-              Explore {propertiesPageData.length} handpicked properties across the United States
+              Explore handpicked properties across the United Arab Emirates
             </p>
           </div>
         </div>

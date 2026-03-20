@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --p-blue:        #0a6cf5;
-  --p-blue-dark:   #0854c2;
+  --p-blue:        #958901;
+  --p-blue-dark:   #9b7a02;
   --p-bg:          #f8f9fb;
   --p-surface:     #ffffff;
   --p-border:      #e2e8f0;
@@ -27,7 +27,7 @@
 
 /* ─── Hero ───────────────────────────────────────────────────────────────────── */
 .props-hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+  background: linear-gradient(135deg, #2e301a 0%, #cfbe01 100%);
   padding: 5rem 2rem 4rem;
   text-align: center;
   position: relative;
@@ -38,14 +38,14 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(10,108,245,0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10,108,245,0.07) 1px, transparent 1px);
+    linear-gradient(rgba(225, 245, 10, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(233, 245, 10, 0.07) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 .props-hero__inner    { position: relative; max-width: 560px; margin: 0 auto; }
-.props-hero__eyebrow  { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--p-blue); font-weight: 700; margin-bottom: 0.9rem; }
+.props-hero__eyebrow  { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: white; font-weight: 700; margin-bottom: 0.9rem; }
 .props-hero__title    { font-family: var(--p-font-display); font-size: clamp(2rem, 5vw, 3rem); color: #fff; font-weight: 700; line-height: 1.15; margin-bottom: 0.9rem; }
-.props-hero__title em { color: var(--p-blue); font-style: normal; }
+.props-hero__title em { color:rgb(48, 41, 2); font-style: normal; }
 .props-hero__sub      { font-size: 0.9rem; color: rgba(255,255,255,0.55); }
 
 /* ─── Body layout ────────────────────────────────────────────────────────────── */
@@ -91,10 +91,10 @@
   color: var(--p-text-2);
   cursor: pointer;
   transition: all var(--p-dur) var(--p-ease);
-  box-shadow: 0 1px 6px rgba(15,23,42,0.04);
+  box-shadow: 0 1px 6px rgba(42, 42, 15, 0.04);
 }
 .props-map-btn:hover         { border-color: var(--p-blue); color: var(--p-blue); }
-.props-map-btn--active       { background: rgba(10,108,245,0.07); border-color: var(--p-blue); color: var(--p-blue); }
+.props-map-btn--active       { background: rgba(245, 210, 10, 0.07); border-color: var(--p-blue); color: var(--p-blue); }
 
 /* ─── Main ───────────────────────────────────────────────────────────────────── */
 .props-main { min-width: 0; }

@@ -13,7 +13,7 @@
   border-radius: 8px;
   border: 1px solid #e2e8f0;
   background: #fff;
-  color: #475569;
+  color: #696147;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.82rem;
   font-weight: 500;
@@ -26,25 +26,25 @@
   padding: 0 0.6rem;
 }
 .ppag__btn:hover:not(:disabled) {
-  border-color: #0a6cf5;
-  color: #0a6cf5;
-  background: rgba(10,108,245,0.05);
+  border-color: #f5b20a;
+  color: #f5be0a;
+  background: rgba(245, 198, 10, 0.05);
 }
 .ppag__btn--active {
-  background: #0a6cf5;
+  background: #f5be0a;
   color: #fff;
-  border-color: #0a6cf5;
+  border-color: #f5ba0a;
   font-weight: 700;
-  box-shadow: 0 3px 10px rgba(10,108,245,0.3);
+  box-shadow: 0 3px 10px rgba(245, 237, 10, 0.3);
 }
-.ppag__btn--active:hover { background: #0a6cf5; color: #fff; }
+.ppag__btn--active:hover { background: #f5c20a; color: #fff; }
 
 .ppag__btn--arrow { padding: 0; }
 .ppag__btn:disabled { opacity: 0.35; cursor: not-allowed; }
 
 .ppag__dots {
   font-size: 0.85rem;
-  color: #94a3b8;
+  color: #b8b194;
   padding: 0 0.2rem;
   display: flex;
   align-items: center;
