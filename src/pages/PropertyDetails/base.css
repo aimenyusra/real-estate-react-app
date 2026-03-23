@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --pd-blue:         #0a6cf5;
-  --pd-blue-dark:    #0854c2;
+  --pd-blue:         #f5c411;
+  --pd-blue-dark:    #c28408;
   --pd-blue-glow:    rgba(10, 108, 245, 0.12);
   --pd-green:        #16a34a;
   --pd-bg:           #f8f9fb;
   --pd-surface:      #ffffff;
   --pd-elevated:     #f0f3f8;
   --pd-border:       #e2e8f0;
-  --pd-border-blue:  rgba(10, 108, 245, 0.28);
+  --pd-border-blue:  rgba(227, 168, 6, 0.28);
   --pd-text-1:       #0f172a;
   --pd-text-2:       #475569;
   --pd-text-3:       #94a3b8;
@@ -24,11 +24,11 @@
   --pd-font-body:    'DM Sans', system-ui, sans-serif;
 }
 .dark {
-  --pd-bg:           #0f172a;
-  --pd-surface:      #1e293b;
-  --pd-elevated:     #2c3e5c;
-  --pd-border:       #334155;
-  --pd-border-blue:  rgba(10, 108, 245, 0.4);
+  --pd-bg:           #2a220f;
+  --pd-surface:      #3b381e;
+  --pd-elevated:     #5c502c;
+  --pd-border:       #554b33;
+  --pd-border-blue:  rgba(245, 198, 10, 0.4);
   --pd-text-1:       #f8f9fb;
   --pd-text-2:       #cbd5e1;
   --pd-text-3:       #64748b;

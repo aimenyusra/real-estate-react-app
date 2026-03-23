@@ -38,8 +38,8 @@
 }
 .dark .pd-bar__back { color: var(--pd-text-2-dark); }
 
-.pd-bar__back:hover     { color: var(--pd-blue); }
-.dark .pd-bar__back:hover { color: var(--pd-blue); }
+.pd-bar__back:hover     { color: var(--pd-golden); }
+.dark .pd-bar__back:hover { color: var(--pd-golden-dark); }
 .pd-bar__crumbs        { display: flex; align-items: center; gap: 0.35rem; font-size: 0.73rem; }
 .pd-bar__crumb         { color: var(--pd-text-3); text-decoration: none; transition: color var(--pd-dur) var(--pd-ease); }
 .dark .pd-bar__crumb { color: var(--pd-text-3-dark); }
