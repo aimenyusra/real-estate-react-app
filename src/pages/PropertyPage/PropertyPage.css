@@ -24,7 +24,9 @@
   min-height: 100vh;
   font-family: var(--p-font-body);
 }
-
+.dark .props-page{
+background-color: #1b1b1b;
+}
 /* ─── Hero ───────────────────────────────────────────────────────────────────── */
 .props-hero {
   background: linear-gradient(135deg, #2e301a 0%, #cfbe01 100%);
