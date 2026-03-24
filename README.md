@@ -1,16 +1,130 @@
-# React + Vite
+🏠 DubaiEstate — UAE Real Estate Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, full-featured real estate listing platform built with React (Vite). Users can browse, filter, save, and compare properties across the United States with a modern, responsive UI.
 
-Currently, two official plugins are available:
+⸻
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Demo
 
-## React Compiler
+https://your-vercel-link-here
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+💻 GitHub Repository
 
-## Expanding the ESLint configuration
+https://your-github-link-here
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⸻
+
+📸 Screenshots
+
+🏠 Home Page
+
+(Add screenshot here)
+
+📄 Property Details
+
+(Add screenshot here)
+
+❤️ Favourites
+
+(Add screenshot here)
+
+⚖️ Compare Page
+
+(Add screenshot here)
+
+⸻
+
+🚀 Tech Stack
+	•	React (Vite)
+	•	React Router v6
+	•	Context API (Global State Management)
+	•	CSS Modules / Component-based styling
+	•	localStorage (Data persistence)
+
+⸻
+
+✨ Features
+	•	🏠 Browse property listings with images and details
+	•	🔍 Filter properties by location, type, bedrooms, and price
+	•	🔃 Sort properties by price, size, and more
+	•	🗂️ Toggle between grid and list views
+	•	🗺️ Interactive property map with markers
+	•	❤️ Add/remove properties from favourites (persisted)
+	•	⚖️ Compare multiple properties side-by-side
+	•	📄 Detailed property pages with gallery and tabs
+	•	📞 Contact page with agent information
+	•	📱 Fully responsive design
+
+⸻
+
+🎯 Key Highlights
+	•	Built a scalable component-based architecture
+	•	Implemented dynamic routing using React Router
+	•	Managed global state using Context API
+	•	Persisted user data using localStorage
+	•	Designed a responsive and reusable UI system
+
+_____
+
+📁 Project Structure
+
+src/
+├── context/
+├── pages/
+├── components/
+├── api/
+
+
+⸻
+🛠️ Installation
+
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+npm run dev
+
+🗺️ Routes
+
+Route.         Description
+
+/                Home Page
+/properties      Property Listings
+/properties/:id  Property Details
+/favourites      Saved Properties
+/compare         Compare Properties
+/contact         Contact Page
+
+💾 Data Persistence
+	•	prop_favourites → stores saved properties
+	•	prop_compare → stores compared properties (max 3)
+
+All data is stored using localStorage (no backend required).
+
+⸻
+
+🔮 Future Improvements
+	•	Backend integration (Node.js + Express + MongoDB)
+	•	User authentication (Login / Signup)
+	•	Advanced search with location API
+	•	Booking / inquiry system
+
+⸻
+
+👤 Author
+
+Aimen
+
+⸻
+
+📄 License
+
+This project is licensed under the MIT License.
+
+⸻
+
+Built with ❤️ using React
+
+
+
+
+
