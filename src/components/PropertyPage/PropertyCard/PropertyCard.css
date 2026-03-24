@@ -17,7 +17,7 @@
 .pcard:hover {
   transform: translateY(-5px);
   box-shadow: 0 16px 40px rgba(15,23,42,0.13);
-  border-color: rgba(10,108,245,0.3);
+  border-color: rgba(245, 218, 10, 0.3);
 }
 
 .pcard__img-wrap {
@@ -37,13 +37,13 @@
 .pcard__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(15,23,42,0.35) 0%, transparent 55%);
+  background: linear-gradient(to top, rgba(42, 40, 15, 0.35) 0%, transparent 55%);
 }
 .pcard__badge {
   position: absolute;
   top: 0.85rem;
   left: 0.85rem;
-  background: #0a6cf5;
+  background: #f5ce0a;
   color: #fff;
   font-size: 0.58rem;
   font-weight: 700;
@@ -86,9 +86,10 @@
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #2a230f;
   line-height: 1;
 }
+.dark .pcard__price { color: #fff; }
 .pcard__location {
   display: flex;
   align-items: center;
@@ -123,9 +124,9 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #0a6cf5;
-  background: rgba(10,108,245,0.08);
-  border: 1px solid rgba(10,108,245,0.2);
+  color: #f5b60a;
+  background: rgba(245, 210, 10, 0.08);
+  border: 1px solid rgba(245, 214, 10, 0.2);
   padding: 0.2rem 0.55rem;
   border-radius: 20px;
 }
@@ -147,8 +148,8 @@
   transition: all 0.18s ease;
   white-space: nowrap;
 }
-.pcard__compare-btn:hover        { border-color: #0a6cf5; color: #0a6cf5; }
-.pcard__compare-btn--active      { background: rgba(10,108,245,0.08); border-color: #0a6cf5; color: #0a6cf5; }
+.pcard__compare-btn:hover        { border-color: #f5da0a; color: #f5d20a; }
+.pcard__compare-btn--active      { background: rgba(245, 186, 10, 0.08); border-color: #f5ce0a; color: #f5be0a; }
 
 .pcard__cta-btn {
   background: none;
@@ -156,7 +157,7 @@
   font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.76rem;
   font-weight: 700;
-  color: #0a6cf5;
+  color: #f5ba0a;
   cursor: pointer;
   padding: 0;
   transition: letter-spacing 0.18s ease;
