@@ -10,7 +10,7 @@ https://real-estate-react-app-nine.vercel.app/
 
 💻 GitHub Repository
 
-https://your-github-link-here
+https://github.com/aimenyusra/real-estate-react-app
 
 ⸻
 
