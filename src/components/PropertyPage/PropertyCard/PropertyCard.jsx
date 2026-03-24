@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useFavourites } from "../../../context/FavouritesContext";
 import "./PropertyCard.css";
 
 const formatPrice = (price) =>
@@ -8,24 +9,27 @@ const formatPrice = (price) =>
     : `$${(price / 1000).toFixed(0)}K`;
 
 const PropertyCard = ({ property }) => {
-  const [saved, setSaved] = useState(false);
   const navigate = useNavigate();
-const goToDetail =(e)=>{
-  e.stopPropagation();
-  navigate(`/property/${property.id}`);
-}
+  const { isFavourite, toggleFavourite, isInCompare, toggleCompare } = useFavourites();
+
+  const saved    = isFavourite(property.id);
+  const compared = isInCompare(property.id);
+
   return (
-    <div className="pcard" onClick={goToDetail}>
+    <div className="pcard" onClick={() => navigate(`/properties/${property.id}`)}>
       <div className="pcard__img-wrap">
         <img className="pcard__img" src={property.image} alt={property.location} loading="lazy" />
         {property.badge && <span className="pcard__badge">{property.badge}</span>}
+
+        {/* ── Heart / Save button ── */}
         <button
           className={`pcard__save ${saved ? "pcard__save--active" : ""}`}
-          onClick={(e) => { e.stopPropagation(); setSaved((s) => !s); }}
-          aria-label="Save property"
+          onClick={(e) => { e.stopPropagation(); toggleFavourite(property); }}
+          aria-label={saved ? "Remove from favourites" : "Add to favourites"}
         >
           {saved ? "❤️" : "🤍"}
         </button>
+
         <div className="pcard__overlay" />
       </div>
 
@@ -50,7 +54,26 @@ const goToDetail =(e)=>{
 
         <div className="pcard__footer">
           <span className="pcard__type">{property.type}</span>
-          <span className="pcard__cta">View →</span>
+          <div className="pcard__actions">
+
+            {/* ── Compare button ── */}
+            <button
+              className={`pcard__compare-btn ${compared ? "pcard__compare-btn--active" : ""}`}
+              onClick={(e) => { e.stopPropagation(); toggleCompare(property); }}
+              title={compared ? "Remove from compare" : "Add to compare"}
+            >
+              {compared ? "⊖ Compare" : "⊕ Compare"}
+            </button>
+
+            {/* ── View button ── */}
+            <button
+              className="pcard__cta-btn"
+              onClick={(e) => { e.stopPropagation(); navigate(`/properties/${property.id}`); }}
+            >
+              View →
+            </button>
+
+          </div>
         </div>
       </div>
     </div>
