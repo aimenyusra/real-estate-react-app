@@ -3,6 +3,7 @@
   min-height: 100vh;
   font-family: 'DM Sans', system-ui, sans-serif;
 }
+.dark .cmp-page { background: #131313; }
 
 /* Hero */
 .cmp-hero {
@@ -44,20 +45,35 @@
   gap: 0.75rem;
 }
 .cmp-toolbar__info        { font-size: 0.85rem; color: #64748b; margin: 0; }
-.cmp-toolbar__info strong { color: #0f172a; }
+.dark .cmp-toolbar__info { color: #f8f0f0; }
+.cmp-toolbar__info strong { color: #2a200f; }
+.dark .cmp-toolbar__info strong { color: #f8f0f0; }
 .cmp-toolbar__actions     { display: flex; gap: 0.5rem; }
 .cmp-toolbar__add {
-  background: #0a6cf5; color: #fff; border: none; border-radius: 8px;
+  background: #f5c20a; color: #fff; border: none; border-radius: 8px;
   padding: 0.6rem 1.2rem; font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: background 0.18s;
 }
-.cmp-toolbar__add:hover { background: #0854c2; }
+.dark .cmp-toolbar__add {
+   background: #c29408; 
+   color: #fff;
+}
+.dark .cmp-toolbar__add { background: #c29708; }
+
+.cmp-toolbar__add:hover { background: #c29408; }
+.dark .cmp-toolbar__add:hover { background: #4e3e03; }
+
 .cmp-toolbar__clear {
   background: none; color: #e11d48; border: 1px solid #fecdd3; border-radius: 8px;
   padding: 0.6rem 1.2rem; font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.8rem; font-weight: 600; cursor: pointer; transition: all 0.18s;
 }
-.cmp-toolbar__clear:hover { background: #fff0f3; }
+.dark .cmp-toolbar__clear { 
+  background: #e11d48; 
+  color: #fff;
+}
+.dark .cmp-toolbar__clear { background: #e11d48; }
+.cmp-toolbar__clear:hover { background: #38030d; }
 
 /* Table — desktop */
 .cmp-table-wrap {
@@ -66,12 +82,16 @@
   box-shadow: 0 2px 16px rgba(15,23,42,0.08);
   border: 1px solid #e2e8f0;
 }
+.dark .cmp-table-wrap { background: #131313; border: #4e4e4e solid 1px; }
+
 .cmp-table {
   width: 100%;
   border-collapse: collapse;
   background: #fff;
   min-width: 600px;
 }
+.dark .cmp-table { background: #1d1c1c; }
+
 
 /* Column widths */
 .cmp-table__row-label {
@@ -86,15 +106,26 @@
   border-right: 1px solid #e2e8f0;
   white-space: nowrap;
 }
+.dark .cmp-table__row-label { color: #f8f0f0;
+background: #1d1c1c; 
+border: #4e4e4e solid 1px;
+
+}
 .cmp-table__prop-head {
   padding: 0;
   border-right: 1px solid #e2e8f0;
   vertical-align: top;
 }
+.dark .cmp-table__prop-head {
+  background: #1d1c1c;
+  border: #4e4e4e solid 1px;
+}
 .cmp-table__prop-head:last-child { border-right: none; }
 
 .cmp-table__row { border-top: 1px solid #f1f5f9; }
+.dark .cmp-table__row { background: #1d1c1c; }
 .cmp-table__row:hover td { background: #f8fafc; }
+.dark .cmp-table__row:hover td { background: #1d1c1c; }
 .cmp-table__cell {
   padding: 1rem 1.25rem;
   font-size: 0.85rem;
@@ -103,8 +134,15 @@
   text-align: center;
   font-weight: 500;
 }
+.dark .cmp-table__cell { 
+  color: #f8f0f0;
+  background: #1d1c1c; 
+  border: #4e4e4e solid 1px;
+}
 .cmp-table__cell:last-child     { border-right: none; }
 .cmp-table__cell--empty         { color: #cbd5e1; }
+.dark .cmp-table__cell--empty { color: #f8f0f0; }
+
 
 /* Property head card inside th */
 .cmp-prop-head { padding: 1.25rem; }
@@ -124,23 +162,32 @@
   align-items: center; justify-content: center;
   transition: background 0.18s;
 }
-.cmp-prop-head__remove:hover { background: #e11d48; }
-.cmp-prop-head__price { font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 0.3rem; }
+.dark .cmp-prop-head__remove { background: #e11d48;
+  color: #fff;}
+.cmp-prop-head__remove:hover { background: #3d010e; }
+.cmp-prop-head__price { font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #2a220f; margin-bottom: 0.3rem; }
+.dark .cmp-prop-head__price { color: #f8f0f0; }
 .cmp-prop-head__loc   { font-size: 0.75rem; color: #64748b; margin-bottom: 0.75rem; }
+.dark .cmp-prop-head__loc { color: #f8f0f0; }
 .cmp-prop-head__btns  { display: flex; gap: 0.4rem; }
 .cmp-prop-head__fav {
   flex: 1; padding: 0.42rem 0.6rem; border: 1px solid #e2e8f0; border-radius: 6px;
   background: none; font-family: 'DM Sans', system-ui, sans-serif; font-size: 0.7rem;
   font-weight: 600; color: #64748b; cursor: pointer; transition: all 0.18s;
 }
+.dark .cmp-prop-head__fav { color: #f8f0f0; 
+  background: #1d1c1c; 
+  border: #4e4e4e solid 1px;
+}
 .cmp-prop-head__fav:hover       { border-color: #e11d48; color: #e11d48; }
-.cmp-prop-head__fav--active     { background: #fff0f3; border-color: #e11d48; color: #e11d48; }
+.dark .cmp-prop-head__fav:hover { border-color: #e11d48; color: #e11d48; }
+.cmp-prop-head__fav--active     { background: #f26481; border-color: #e11d48; color: #e11d48; }
 .cmp-prop-head__view {
-  flex: 1; padding: 0.42rem 0.6rem; background: #0a6cf5; color: #fff;
+  flex: 1; padding: 0.42rem 0.6rem; background: #f5c20a; color: #fff;
   border: none; border-radius: 6px; font-family: 'DM Sans', system-ui, sans-serif;
   font-size: 0.7rem; font-weight: 700; cursor: pointer; transition: background 0.18s;
 }
-.cmp-prop-head__view:hover { background: #0854c2; }
+.cmp-prop-head__view:hover { background: #c29408; }
 
 /* Empty slot */
 .cmp-empty-slot {
@@ -158,11 +205,15 @@
   transition: border-color 0.18s, background 0.18s;
   padding: 2rem;
 }
-.cmp-empty-slot:hover         { border-color: #0a6cf5; background: rgba(10,108,245,0.03); }
+.cmp-empty-slot:hover         { border-color: #f5b60a; background: rgba(245, 190, 10, 0.03); }
 .cmp-empty-slot__icon         { font-size: 1.8rem; color: #cbd5e1; transition: color 0.18s; }
 .cmp-empty-slot__label        { font-size: 0.78rem; color: #94a3b8; font-weight: 600; }
-.cmp-empty-slot:hover .cmp-empty-slot__icon  { color: #0a6cf5; }
-.cmp-empty-slot:hover .cmp-empty-slot__label { color: #0a6cf5; }
+.cmp-empty-slot:hover .cmp-empty-slot__icon  { color: #f5be0a; }
+.cmp-empty-slot:hover .cmp-empty-slot__label { color: #f5de0a; }
+.dark .cmp-empty-slot { background: #131313; }
+.dark .cmp-empty-slot:hover { border-color: #e11d48; background: rgba(245, 190, 10, 0.03); }
+.dark .cmp-empty-slot__icon { color: #f8f0f0; }
+.dark .cmp-empty-slot__label { color: #f8f0f0; }
 
 /* Cards — mobile only */
 .cmp-cards { display: none; }
