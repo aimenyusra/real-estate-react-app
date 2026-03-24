@@ -17,7 +17,7 @@ return(
 <Route path="/" element={<Home/>}/>
 <Route path="/properties" element={<PropertyPage/>}/>
 <Route
-  path="/property/:id"
+  path="/properties/:id"
   element={<PropertyDetails />}
 />
 <Route path="/favorites" element={<Favourites/>}/>
