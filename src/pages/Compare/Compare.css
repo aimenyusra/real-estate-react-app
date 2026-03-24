@@ -172,7 +172,7 @@ border: #4e4e4e solid 1px;
 .cmp-prop-head__btns  { display: flex; gap: 0.4rem; }
 .cmp-prop-head__fav {
   flex: 1; padding: 0.42rem 0.6rem; border: 1px solid #e2e8f0; border-radius: 6px;
-  background: none; font-family: 'DM Sans', system-ui, sans-serif; font-size: 0.7rem;
+  background: none; color: #0f172a; font-family: 'DM Sans', system-ui, sans-serif; font-size: 0.7rem;
   font-weight: 600; color: #64748b; cursor: pointer; transition: all 0.18s;
 }
 .dark .cmp-prop-head__fav { color: #f8f0f0; 
@@ -181,7 +181,7 @@ border: #4e4e4e solid 1px;
 }
 .cmp-prop-head__fav:hover       { border-color: #e11d48; color: #e11d48; }
 .dark .cmp-prop-head__fav:hover { border-color: #e11d48; color: #e11d48; }
-.cmp-prop-head__fav--active     { background: #f26481; border-color: #e11d48; color: #e11d48; }
+.cmp-prop-head__fav--active     { background: #fcfcfc; border-color: #e11d48; color: #e11d48; }
 .cmp-prop-head__view {
   flex: 1; padding: 0.42rem 0.6rem; background: #f5c20a; color: #fff;
   border: none; border-radius: 6px; font-family: 'DM Sans', system-ui, sans-serif;
