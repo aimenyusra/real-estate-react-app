@@ -11,7 +11,7 @@ const STATS = [
 ];
 
 const FEATURES = [
-  { icon: "🏆", title: "Premium Listings",   desc: "Handpicked luxury and mid-range properties across all major US cities." },
+  { icon: "🏆", title: "Premium Listings",   desc: "Handpicked luxury and mid-range properties across all major UAE cities." },
   { icon: "🔍", title: "Smart Search",       desc: "Filter by location, price, type, size and get instant results." },
   { icon: "📊", title: "Compare & Decide",   desc: "Compare up to 3 properties side by side to make informed decisions." },
   { icon: "❤️",  title: "Save Favourites",   desc: "Heart any property and it stays saved — even when you close the tab." },
@@ -54,7 +54,7 @@ const HomePage = () => {
               Property Today
             </h1>
             <p className="home-hero__sub">
-              Explore thousands of premium properties across the United States.
+              Explore thousands of premium properties across the United Arab Emirates.
               Search, save, compare — all in one place.
             </p>
 
@@ -173,7 +173,7 @@ const HomePage = () => {
         <footer className="home-footer">
           <div className="home-footer__inner">
             <div className="home-footer__brand">
-              <span className="home-footer__logo">◆ EstateElite</span>
+              <span className="home-footer__logo">◆ DubaiEstate</span>
               <p className="home-footer__tagline">Premium real estate for discerning buyers.</p>
             </div>
             <div className="home-footer__links">
@@ -182,7 +182,7 @@ const HomePage = () => {
               <button onClick={() => navigate("/compare")}>Compare</button>
               <button onClick={() => navigate("/contact")}>Contact</button>
             </div>
-            <p className="home-footer__copy">© 2024 EstateElite. All rights reserved.</p>
+            <p className="home-footer__copy">© 2024 DubaiEstate. All rights reserved.</p>
           </div>
         </footer>
 

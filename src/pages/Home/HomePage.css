@@ -108,7 +108,7 @@
   color: rgba(255,255,255,0.55);
   line-height: 1.8;
   margin-bottom: 2.5rem;
-  max-width: 520px;
+  max-width: 530px;
   margin-inline: auto;
 }
 
@@ -216,6 +216,7 @@
   padding: 6rem 2rem;
   background: #fdfbf6;
 }
+.dark .home-features { background: #151515; }
 .home-features__inner { max-width: 1100px; margin: 0 auto; }
 .home-features__grid  { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 
@@ -228,6 +229,12 @@
   position: relative;
   overflow: hidden;
 }
+.dark .home-feature-card { background: #373736;
+border: #4e4e4e solid 1px;
+color: #fff
+}
+.dark .home-section-head__title { color: #fff; }
+
 .home-feature-card::before {
   content: '';
   position: absolute;
@@ -240,6 +247,7 @@
 .home-feature-card:hover::before { opacity: 1; }
 .home-feature-card__icon  { font-size: 2rem; margin-bottom: 1rem; display: block; position: relative; }
 .home-feature-card__title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; color: var(--text-1); margin-bottom: 0.6rem; position: relative; }
+.dark .home-feature-card__title { color: #fff; }
 .home-feature-card__desc  { font-size: 0.84rem; color: var(--text-2); line-height: 1.75; position: relative; }
 
 /* ── CTA Banner ───────────────────────────────────────────────────────────────── */
@@ -283,6 +291,7 @@
 
 /* ── Testimonials ─────────────────────────────────────────────────────────────── */
 .home-testimonials { padding: 6rem 2rem; background: #fdfbf6; }
+.dark .home-testimonials { background: #151515; }
 .home-testimonials__inner { max-width: 1100px; margin: 0 auto; }
 .home-testimonials__grid  { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 
@@ -296,10 +305,16 @@
   gap: 1.1rem;
   transition: all var(--dur) var(--ease);
 }
+.dark .home-tcard { background: #373736;
+  border: #4e4e4e solid 1px;
+  color: #fff;
+} 
 .home-tcard:hover { border-color: var(--gold-1); box-shadow: 0 8px 28px rgba(201,168,76,0.12); transform: translateY(-3px); }
 .home-tcard__stars  { color: var(--gold-1); font-size: 0.9rem; letter-spacing: 0.1em; }
 .home-tcard__quote  { font-size: 0.88rem; color: var(--text-2); line-height: 1.8; font-style: italic; flex: 1; }
 .home-tcard__author { display: flex; align-items: center; gap: 0.85rem; }
+.dark .home-tcard__author { color: #fff; }
+.dark .home-tcard__name { color: #fff; }
 .home-tcard__av {
   width: 42px;
   height: 42px;
@@ -314,6 +329,7 @@
   flex-shrink: 0;
   border: 2px solid var(--gold-border);
 }
+.dark .home-tcard__av { color: #fff; }  
 .home-tcard__name { font-size: 0.85rem; font-weight: 600; color: var(--text-1); margin-bottom: 0.15rem; }
 .home-tcard__role { font-size: 0.7rem; color: var(--text-3); }
 
